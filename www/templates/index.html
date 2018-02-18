@@ -4,6 +4,21 @@
 
 	</head>
 	<body>
-		<h1>Welcome to Canary Airlines!</h1>
+		<h1>Welcome to mySQL!</h1>
+		<h2>There is {{ n_tables }} tables in the database.</h2>
+		<hr>
+
+		<table>
+			<tr>
+				<th>Name</th>
+			</tr>
+			{% for table in tables %}
+			<tr>
+				<td>{{ table }}</td>
+			</tr>
+			{% endfor %}
+
+
+
 	</body>
 </html>
